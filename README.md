@@ -23,13 +23,7 @@ Above steps 1&2&3 are described well in eg this video: https://xit.fi/install-ar
 On the Arduino IDE you can find the SimpleTime.ino sketch (or from within this repo) that connects to your local Wifi network an print local time to the serial monitor. This simple sketch is easy to use.
 
 If your changes after the initial flashing do not go through without error, try to unplug the USB, that helped for me.
-(Arduino: 1.8.15 (Mac OS X), Board: "ESP32 Dev Module, Disabled, Default 4MB with spiffs (1.2MB APP/1.5MB SPIFFS), 240MHz (WiFi/BT), QIO, 80MHz, 4MB (32Mb), 921600, None"
-
-Sketch uses 642978 bytes (49%) of program storage space. Maximum is 1310720 bytes.
-Global variables use 37972 bytes (11%) of dynamic memory, leaving 289708 bytes for local variables. Maximum is 327680 bytes.
-esptool.py v3.0-dev
-Traceback (most recent call last):
-Serial port /dev/cu.SLAB_USBtoUART
+(Serial port /dev/cu.SLAB_USBtoUART
   File "esptool.py", line 3969, in <module>
   File "esptool.py", line 3962, in _main
   File "esptool.py", line 3551, in main
@@ -38,10 +32,5 @@ Serial port /dev/cu.SLAB_USBtoUART
   File "serial/serialposix.py", line 268, in open
 serial.serialutil.SerialException: [Errno 16] could not open port /dev/cu.SLAB_USBtoUART: [Errno 16] Resource busy: '/dev/cu.SLAB_USBtoUART'
 Failed to execute script esptool
-An error occurred while uploading the sketch
+An error occurred while uploading the sketch)
 
-
-This report would have more information with
-"Show verbose output during compilation"
-option enabled in File -> Preferences.
-)

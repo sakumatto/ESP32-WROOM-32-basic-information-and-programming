@@ -20,10 +20,11 @@ Above steps 1&2&3 are described well in eg this video: https://xit.fi/install-ar
 ![Pinout ESP32-WROOM-32](esp32pinout.jpg)
 
 ## Testing Wifi with easy SimpleTime.ino program
-On the Arduino IDE you can find the SimpleTime.ino sketch (or from within this repo) that connects to your local Wifi network an print local time to the serial monitor. This simple sketch is easy to use.
+On the Arduino IDE you can find the SimpleTime.ino sketch (or from within this repo) that connects to your local Wifi network and prints local time to the serial monitor. This simple sketch is easy enough to use.
 
 If your changes after the initial flashing do not go through without error, try to unplug the USB, that helped for me.
-(Serial port /dev/cu.SLAB_USBtoUART
+
+```(Serial port /dev/cu.SLAB_USBtoUART
   File "esptool.py", line 3969, in <module>
   File "esptool.py", line 3962, in _main
   File "esptool.py", line 3551, in main
@@ -32,5 +33,7 @@ If your changes after the initial flashing do not go through without error, try 
   File "serial/serialposix.py", line 268, in open
 serial.serialutil.SerialException: [Errno 16] could not open port /dev/cu.SLAB_USBtoUART: [Errno 16] Resource busy: '/dev/cu.SLAB_USBtoUART'
 Failed to execute script esptool
-An error occurred while uploading the sketch)
+An error occurred while uploading the sketch)```
+
+That's it! Have fun with your ESP32.
 
